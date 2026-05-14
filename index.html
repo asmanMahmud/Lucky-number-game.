@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secret Number Elite</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts for Typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="background-glow"></div>
+    
+    <main class="glass-card">
+        <header>
+            <h1>Secret Number</h1>
+            <p>Guess the mystery value between 0 and 10</p>
+        </header>
+
+        <section class="game-area">
+            <div class="input-group">
+                <input type="number" id="userGuess" placeholder="Enter number..." min="0" max="10">
+                <button id="guessBtn">Guess</button>
+            </div>
+            
+            <div id="feedback" class="feedback-msg">Waiting for your move...</div>
+        </section>
+
+        <footer class="stats">
+            <div class="stat-box">
+                <span class="label">Attempts:</span>
+                <span id="attemptCount" class="value">0</span>
+            </div>
+            <button id="resetBtn" class="secondary-btn">Reset Game</button>
+        </footer>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
