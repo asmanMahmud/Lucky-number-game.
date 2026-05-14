@@ -25,7 +25,7 @@ function handleGuess() {
 
     // Core Comparison Logic (Your original logic)
     if (userNumber === randomNumber) {
-        feedback.textContent = `🎉 Congrats! You won in ${count} attempts`;
+        feedback.textContent = `🎉Your lucky number is ${count} `;
         feedback.style.color = '#4ade80'; // Success color
         guessBtn.disabled = true;
     } else {
